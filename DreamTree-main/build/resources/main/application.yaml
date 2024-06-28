@@ -1,0 +1,30 @@
+openapi: 3.0.3
+info:
+  title: Title
+  description: Title
+  version: 1.0.0
+servers:
+  - url: 'https'
+paths:
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Vlfkalem1@
+    url: jdbc:mysql://13.209.57.129:3306/dream_tree
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: false
+        default_batch_fetch_size: 1000
+  devtools:
+    livereload:
+      enabled: true

@@ -1,0 +1,273 @@
+@charset "UTF-8";
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url(all.min.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #B6B3C3, #857FA0, #564C7E, #201939, #130E28);
+    height: 100vh;
+}
+
+
+/*콘텐츠 사이즈 1200*/
+[class $= "inner"] {
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+}
+
+#header {
+  position: relative;
+  z-index: 1;
+  height: 50px;
+  line-height: 50px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  transition: all 0.5s;
+  overflow: hidden
+}
+
+
+
+/*header*/
+.cont {
+    background-color: rgb(0, 0, 0, 0.17);
+    padding: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.2rem;
+}
+
+
+
+.header-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.login_nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+}
+
+.sign-up {
+    width: 100px;
+    border-radius: 30px;
+    background: #383253;
+    text-align: center;
+    border-style: solid;
+}
+
+#work .nav {
+    width: 400px;
+    height: 50px;
+    border-radius: 30px;
+    margin: 30px 0px 20px 200px;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white; /* 글씨색을 흰색으로 설정 */
+    border: 1px solid white; /* 테두리를 흰색으로 설정 */
+}
+
+#work .nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#skill .skill-inner{
+    width: 800px;
+}
+#skill .skill-header {
+    width: 800px;
+    height: 70px;
+    background-color: #B6B3C3;
+    font-size: 20px;
+    border-radius: 30px 30px 0 0 ;
+}
+#skill .profile-box1 {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+}
+#skill .profile-box1 .photo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-left: 40px;
+    background-color: #c9d6ff;
+    border-radius: 10px;
+}
+#skill .profile-box1 .bar {
+    width: 50px;
+    height: 50px;
+    margin-left: 550px;
+    text-align: center;
+    background-color: #ffff;
+    color: #7751C7;
+    border-radius: 10px;
+}
+#skill .profile-box1 .bar p {
+    margin-top: 3px;
+    font-size: xx-large;
+    font-weight: thin;
+    transform: rotate(90deg);
+}
+#skill .profile-box1 .right {
+    width: 50px;
+    height: 50px;
+    color: #ffff;
+}
+#skill .profile-box1 .right p {
+    margin-top: 25px;
+}
+
+#skill .skill-main {
+    background-color: #ffff;
+    border-radius: 0 0 30px 30px;
+}
+.wrap {
+    padding: 40px 50px;
+    border-radius: 0 0 30px 30px;
+}
+
+.wrap .chat {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.wrap .chat .icon {
+    position: relative;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #eee;
+}
+
+.wrap .chat .icon i {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    font-size: 2.5rem;
+    color: #aaa;
+    transform: translateX(-50%);
+}
+
+.wrap .chat .textbox {
+    position: relative;
+    display: inline-block;
+    max-width: 430px;
+    padding: 10px;
+    margin-top: 7px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.wrap .chat .textbox::before {
+    position: absolute;
+    display: block;
+    top: 0;
+    font-size: 1.5rem;
+}
+
+.wrap .ch1 .textbox {
+    margin-left: 20px;
+    background-color: #ddd;
+}
+
+.wrap .ch1 .textbox::before {
+    left: -15px;
+    content: "◀";
+    color: #ddd;
+}
+
+.wrap .ch2 {
+    flex-direction: row-reverse;
+}
+
+.wrap .ch2 .textbox {
+    margin-right: 20px;
+    background-color: #F9EB54;
+}
+
+.wrap .ch2 .textbox::before {
+    right: -15px;
+    content: "▶";
+    color: #F9EB54;
+}
+.skill-footer {
+    border-radius: 0 0 30px 30px;
+}
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textarea-container {
+    position: relative; /* 상대 위치 설정 */
+    width: calc(100% - 100px); /* 텍스트 에리어와 버튼을 나란히 배치하기 위해 버튼의 너비 만큼 뺀 크기로 설정 */
+}
+
+.chat-textarea {
+    width: 100%;
+    padding: 30px;
+    margin: 10px;
+    background-color: #EBE2FF;
+    border: 1px solid #C2C2C2;
+    border-radius: 30px;
+    resize: none; /* 텍스트 에리어 크기 조절 비활성화 */
+}
+
+.send-button {
+    position: absolute; /* 절대 위치 설정 */
+    top: 95%; /* 위쪽으로 버튼을 옮기기 위해 50% 위치 설정 */
+    right: 28%; /* 오른쪽으로 버튼을 옮김 */
+    transform: translateY(-50%); /* 버튼을 세로 중앙으로 정렬하기 위해 사용 */
+    padding: 5px 25px;
+    background-color: #FFFFFF;
+    color: #D9D9D9;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+    font-size: 25px;
+}
+.send-button:hover {
+    background-color: hotpink;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
